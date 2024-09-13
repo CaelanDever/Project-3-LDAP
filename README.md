@@ -16,7 +16,7 @@ sudo dnf install openldap-server openldap-clients
 <img width="459" alt="ld" src="https://github.com/user-attachments/assets/6554f902-c155-4c4b-b81b-4b11f36a8c7f">
 
 
-Step 2: Configure the OpenLDAP Server
+# Step 2: Configure the OpenLDAP Server
 Start and enable the OpenLDAP service:
 
 sudo systemctl start slapd
@@ -71,7 +71,7 @@ ldapadd -Y EXTERNAL -H ldapi:/// -f init.ldif
 <img width="411" alt="88" src="https://github.com/user-attachments/assets/6391d189-7ca8-4c3d-9bc8-6d69af6dd4d6">
 
 
-Step 3: Configure Access Control
+# Step 3: Configure Access Control
 Edit the access control list (ACL):
 
 
@@ -128,8 +128,9 @@ Verify the directory contents:
 
 ldapsearch -x -b "dc=example,dc=com"
 
-<img width="232" alt="56" src="https://github.com/user-attachments/assets/452e9d37-576a-44bf-96b7-bbaedfc29b67">
 
+
+<img width="232" alt="56" src="https://github.com/user-attachments/assets/a75b98d9-3f15-4f9b-98e4-702cb9573acb">
 
 
 # Step 5: Configure LDAP Client (Optional)
